@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+    <!-- Firebase Script Below -->
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  
+  
+  
+  <title>Emo Frontal Lobe - Emojis</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://hackprinceton.com/img/hp-logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.teal-red.min.css">
+    <link rel="stylesheet" href="css/styles2.css">
+     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.pink-blue.min.css" /> 
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+</head>
+
+<body>
+ 
+  <div class="_demo--banner banner">
+    <div class="_demo--container">
+      <div class="banner--service-container">
+        <div class="banner--service-icon-container">
+          <img class="banner--service-icon" src="https://hackprinceton.com/img/hp-logo.png" alt="Tone Analyzer API Icon">
+        </div>
+        <div class="banner--service-info">
+          <h1 class="banner--service-title base--h1">
+                        <img class="banner--service-icon_INLINE" src="https://hackprinceton.com/img/hp-logo.png" alt="Emo Frontal Lobe">
+                             Emo Frontal Lobe
+                    </h1>
+         
+        </div>
+      </div>
+      <div class="banner--service-resource-container">
+        <div class="banner--row">
+          <div class="banner--service-resource">
+         
+        
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+        <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+            </div>
+            <h3>Mental and Emotional Emoji Analysis</h3>
+              <p id="textinsert">
+                See the results of text information in emoji form here! You can see said results once you have entered in 3 values above on the page and have clicked the 'OK' button.  
+              </p>
+          </div>
+        </div>
+              <!-- Numeric Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+    <label class="mdl-textfield__label" for="sample2"> Anger Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+    <!-- Numeric Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample3">
+    <label class="mdl-textfield__label" for="sample2">Disgust Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+    <!-- Numeric Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+    <label class="mdl-textfield__label" for="sample2">Fear Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+    <form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample5">
+    <label class="mdl-textfield__label" for="sample2">Joy Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+    <form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample6">
+    <label class="mdl-textfield__label" for="sample2">Sadness Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+    <form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample7">
+    <label class="mdl-textfield__label" for="sample2">Analytical Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+    <form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample8">
+    <label class="mdl-textfield__label" for="sample2">Confident Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+    <form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample9">
+    <label class="mdl-textfield__label" for="sample2">Tentative Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="submitData();">
+  <i class="material-icons">OK</i>
+</button>
+          
+            <script>
+            var result;
+var ref = new Firebase('https://museleap.firebaseio.com');        
+    ref.child('State');
+        
+        
+var focusNum = 0;
+var distractNum = 0;
+                
+                    var row1=[];
+console.log("row1"+row1);       
+var row2=[];
+        console.log("row2"+row2);  
+var row3=[];        
+        console.log("row3"+row3);
+                
+var focusedList = ['🙌','💭','🍻'];
+var relaxedList = ['🙏','💥','☕'];                
+                var ratio = 0;
+        
+ref.on("value", function(snapshot) {
+  var resultsList = snapshot.val().State; 
+  for(var x in resultsList){
+    console.log(resultsList[x]);
+      if(resultsList[x]=='Focused'){
+          focusNum++;
+      }
+      else{
+          distractNum++;
+      }
+  }   
+    ratio = focusNum/distractNum * 100 > 100? ((focusNum/distractNum * 100)-100) : focusNum/distractNum * 100;
+    console.log(ratio);
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+});        
+
+function submitData(){
+    var x = document.getElementById("sample2").value;
+    var x1 = document.getElementById("sample3").value;
+    var x2 = document.getElementById("sample4").value;
+    var x3 = document.getElementById("sample5").value;
+    var x4 = document.getElementById("sample6").value;
+    var x5 = document.getElementById("sample7").value;
+    var x6 = document.getElementById("sample8").value;
+    var x7 = document.getElementById("sample9").value;
+    
+    returnEmoji('anger',x);
+    returnEmoji('disgust',x1);
+    returnEmoji('fear',x2);
+    returnEmoji('joy',x3);
+    returnEmoji('sadness',x4);
+    returnEmoji('analytical',x5);
+    returnEmoji('confident',x6);
+    returnEmoji('tentative',x7);
+    
+    finalRes();
+}                
+        
+    
+
+function returnEmoji(word,strength){
+    
+    var column = 0;
+    
+var angerList = ["😠",'😡','💢'];        
+var disgustList = ['😷','😖','😟'];
+var fearList = ['😨','😱','😱'];
+var joyList = ['😂','😂','😹'];
+var sadnessList = ['😢','😭','😭'];
+var analyticalList = ['🤔','🙄','🤓'];
+var confidentList = ['😎','😉','🤑'];
+var tentativeList = ['😕','🙁','😟'];  
+    
+    var maxIndex = 0;
+    if(strength>=0.33 && strength < .66){
+        maxIndex = 1;
+    }
+    else if(strength>=0.66 && strength <= 1){
+        maxIndex = 2;
+    }
+    var emojis;
+    
+        switch(word){
+        case 'anger':
+            column = 0;    
+            emojis=angerList; 
+            break;
+        case 'disgust':
+                column = 1;  
+            emojis=disgustList;
+            break;
+        case 'fear':
+                column = 2;  
+            emojis=fearList;
+            break;
+        case 'joy':
+            column = 3;      
+            emojis=joyList;
+            break;    
+        case 'sadness':
+            column = 4;      
+            emojis=sadnessList;
+            break; 
+         case 'analytical':
+            column = 5;      
+            emojis=analyticalList;
+            break;
+         case 'confident':
+            column = 6;  
+            emojis=confidentList;
+            break;
+         case 'tentative':
+            column = 7;      
+            emojis=tentativeList;
+            break;    
+        default:
+            return '';
+    }
+    console.log("emojis array: "+emojis);  
+    for( x = 0; x < maxIndex+1; x++){
+        
+        maxIndex>=0 ? row1[column]=emojis[0] : row1[column]=" ";    
+        maxIndex>=1 ? row2[column]=emojis[1] : row2[column]=" ";    
+        maxIndex>=2 ? row3[column]=emojis[2] : row3[column]=" ";    
+    }
+    
+    console.log("row1"+row1);       
+        console.log("row2"+row2);        
+        console.log("row3"+row3);  
+    
+
+    if(ratio>0.5){
+        result = "You were very focused! "+ratio+"% "+focusedList;
+    }
+    else{
+        result = "You were very relaxed! "+ratio+"% "+relaxedList;
+    }
+}   
+                function finalRes(){
+                        document.getElementById("textinsert").innerHTML+='<br>'+result+'<br>'+row1+''+row2+''+row3+'';
+                }
+    </script>
+</body>
+</html>
